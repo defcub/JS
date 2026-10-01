@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Лабораторна робота №3 - Функції</title>
+    <script src="main.js" defer></script>
+    <style>
+        body { font-family: Arial, sans-serif; padding: 20px; max-width: 800px; margin: 0 auto; color: #333; background-color: #f9f9fa; }
+        .level-section { margin-bottom: 25px; padding: 20px; border: 1px solid #ddd; border-radius: 8px; background: #fff; box-shadow: 0 2px 4px rgba(0,0,0,0.05); }
+        .level-section h3 { margin-top: 0; color: #2c3e50; border-bottom: 2px solid #e0e0e0; padding-bottom: 10px; }
+        .btn-group { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 15px; }
+        button { padding: 10px 15px; cursor: pointer; border: 1px solid #ccc; border-radius: 5px; background: #fdfdfd; transition: 0.2s; font-weight: bold; }
+        button:hover:not(:disabled) { background: #e0e0e0; }
+        button:disabled { cursor: not-allowed; opacity: 0.6; }
+        .back-link { display: inline-block; margin-bottom: 20px; text-decoration: none; color: #2980b9; font-weight: bold; }
+        .custom-box { margin-top: 20px; padding: 15px; background: #e8f4fd; border-radius: 8px; border-left: 4px solid #2980b9; }
+    </style>
+</head>
+<body>
+
+    <h2>Лабораторна робота №3: Функції</h2>
+    <a href="../index.html" class="back-link">⬅ Повернутися на головну</a>
+
+    <!-- РІВЕНЬ 1 -->
+    <div class="level-section">
+        <h3>Рівень 1 (4-6 балів)</h3>
+        <div class="btn-group">
+            <button id="btn-l1-t1">Завдання 1: Привітання</button>
+            <button id="btn-l1-t2">Завдання 2: Оцінка студента</button>
+            <button id="btn-l1-t3">Завдання 3: Чайові</button>
+        </div>
+    </div>
+
+    <!-- РІВЕНЬ 2 -->
+    <div class="level-section">
+        <h3>Рівень 2 (7-9 балів)</h3>
+        <div class="btn-group">
+            <button id="btn-l2-t1">Завдання 1: Таймер (3 сек)</button>
+            <button id="btn-l2-t2">Завдання 2: Калькулятор</button>
+            <button id="btn-l2-t3">Завдання 3: Лічильник (Див. Console)</button>
+        </div>
+    </div>
+
+    <!-- РІВЕНЬ 3 -->
+    <div class="level-section">
+        <h3>Рівень 3 (10-12 балів)</h3>
+        <div class="btn-group">
+            <button id="btn-l3-t2">Завдання 2: Генератор паролів</button>
+            <button id="btn-l3-t3">Завдання 3: Чат-бот</button>
+        </div>
+
+        <!-- Твої блоки для 1 і 4 завдання (трохи адаптовані для кнопок) -->
+        <div class="custom-box">
+            <h4>Завдання 1: Генератор випадкових чисел</h4>
+            <button id="btn-l3-t1-setup">1. Ввести межі (min/max)</button>
+            <button id="next" disabled>2. Next number</button>
+            <div id="out" style="margin-top: 15px; font-size: 18px; font-weight: bold; color: #2c3e50;"></div>
+        </div>
+
+        <div class="custom-box" style="background: #fdf5e8; border-left-color: #f39c12;">
+            <h4>Завдання 4: Втрата контексту (this)</h4>
+            <button id="btn-l3-t4-setup">1. Задати ім'я</button>
+            <button id="hello" disabled>2. Say</button>
+        </div>
+    </div>
+
+</body>
+</html>
