@@ -4,76 +4,78 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Лабораторна робота - Робота з DOM</title>
-    
-    <!-- ГОЛОВНЕ: Підключення твого файлу main.js -->
     <script src="main.js" defer></script>
 </head>
-<body style="padding: 20px; background-color: #f9f9fa;">
+<body style="padding: 20px; background-color: #f9f9fa; display: flex; flex-direction: column; align-items: center;">
 
-    <a href="../index.html" style="display: inline-block; margin-bottom: 20px; text-decoration: none; color: #2980b9; font-weight: bold;">⬅ Повернутися на головну</a>
-
-    <h2 style="color: #2c3e50; margin-bottom: 30px;">Лабораторна робота: Робота з DOM та обробка подій</h2>
-
-    <!-- ЗАВДАННЯ 1 -->
-    <div style="margin-bottom: 20px; padding: 15px; border: 1px solid #ccc; max-width: 400px; font-family: Arial, sans-serif; background: #fff;">
-        <h3 style="margin-top: 0;">Конвертер температур</h3>
+    <div style="width: 100%; max-width: 800px; display: flex; flex-direction: column; align-items: center;">
         
-        <div style="margin-bottom: 10px;">
-            <label for="fahrenheit" style="display: inline-block; width: 220px;">Температура за Фаренгейтом</label>
-            <input type="number" id="fahrenheit" step="any">
+        <a href="../index.html" style="align-self: flex-start; display: inline-block; margin-bottom: 20px; text-decoration: none; color: #2980b9; font-weight: bold;">⬅ Повернутися на головну</a>
+
+        <h2 style="color: #2c3e50; margin-bottom: 30px; text-align: center;">Лабораторна робота: Робота з DOM та обробка подій</h2>
+
+        <!-- ЗАВДАННЯ 1 -->
+        <div style="width: 100%; margin-bottom: 20px; padding: 15px; border: 1px solid #ccc; max-width: 400px; font-family: Arial, sans-serif; background: #fff;">
+            <h3 style="margin-top: 0;">Конвертер температур</h3>
+            
+            <div style="margin-bottom: 10px;">
+                <label for="fahrenheit" style="display: inline-block; width: 220px;">Температура за Фаренгейтом</label>
+                <input type="number" id="fahrenheit" step="any">
+            </div>
+            
+            <div>
+                <label for="celsius" style="display: inline-block; width: 220px;">Температура за Цельсієм</label>
+                <input type="number" id="celsius" step="any">
+            </div>
         </div>
-        
-        <div>
-            <label for="celsius" style="display: inline-block; width: 220px;">Температура за Цельсієм</label>
-            <input type="number" id="celsius" step="any">
+
+        <!-- ЗАВДАННЯ 2 -->
+        <div style="width: 100%; margin-bottom: 20px; padding: 15px; border: 1px solid #ccc; max-width: 400px; font-family: Arial, sans-serif; background: #fff;">
+            <h3 style="margin-top: 0;">Завдання 2: Таблиця множення</h3>
+            <p id="score" style="font-weight: bold; color: #27ae60;">Загальний рахунок 0% (0 правильних відповідей з 0)</p>
+            
+            <button id="nextBtn" style="padding: 5px 10px; cursor: pointer;">наступне завдання</button>
+            <br><br>
+
+            <span id="taskText" style="font-size: 18px; font-weight: bold;"></span>
+            <input type="number" id="answer" style="width: 60px; padding: 5px;">
+            <button id="checkBtn" style="padding: 5px 10px; cursor: pointer;">перевірити</button>
+            
+            <p id="resultMsg" style="font-weight: bold; min-height: 20px; margin-bottom: 0;"></p>
         </div>
-    </div>
 
-    <!-- ЗАВДАННЯ 2 -->
-    <div style="margin-bottom: 20px; padding: 15px; border: 1px solid #ccc; max-width: 400px; font-family: Arial, sans-serif; background: #fff;">
-        <h3 style="margin-top: 0;">Завдання 2: Таблиця множення</h3>
-        <p id="score" style="font-weight: bold; color: #27ae60;">Загальний рахунок 0% (0 правильних відповідей з 0)</p>
-        
-        <button id="nextBtn" style="padding: 5px 10px; cursor: pointer;">наступне завдання</button>
-        <br><br>
+        <!-- ЗАВДАННЯ 3 -->
+        <div style="width: 100%; margin-bottom: 20px; padding: 15px; border: 1px solid #ccc; max-width: 400px; font-family: Arial, sans-serif; background: #fff;">
+            <h3 style="margin-top: 0;">Завдання 3: Таблиця множення (Радіокнопки)</h3>
+            
+            <p id="score3" style="font-weight: bold; color: #27ae60;">Загальний рахунок 0% (0 правильних з 0)</p>
+            <button id="nextBtn3" style="padding: 5px 10px; cursor: pointer;">наступне завдання</button>
+            <br><br>
+            
+            <span id="taskText3" style="font-size: 18px; font-weight: bold;"></span>
+            <div id="radioContainer" style="margin: 10px 0;"></div>
+            
+            <p id="resultMsg3" style="font-weight: bold; min-height: 20px; margin-bottom: 0;"></p>
+        </div>
 
-        <span id="taskText" style="font-size: 18px; font-weight: bold;"></span>
-        <input type="number" id="answer" style="width: 60px; padding: 5px;">
-        <button id="checkBtn" style="padding: 5px 10px; cursor: pointer;">перевірити</button>
-        
-        <p id="resultMsg" style="font-weight: bold; min-height: 20px; margin-bottom: 0;"></p>
-    </div>
+        <!-- ЗАВДАННЯ 4 -->
+        <div style="width: 100%; margin-bottom: 20px; padding: 15px; border: 1px solid #ccc; max-width: 650px; font-family: Arial, sans-serif; background: #fff;">
+            <h3 style="margin-top: 0;">Завдання 4: Ротатор зображень (Телефони)</h3>
+            <div id="rotator"></div>
+        </div>
 
-    <!-- ЗАВДАННЯ 3 -->
-    <div style="margin-bottom: 20px; padding: 15px; border: 1px solid #ccc; max-width: 400px; font-family: Arial, sans-serif; background: #fff;">
-        <h3 style="margin-top: 0;">Завдання 3: Таблиця множення (Радіокнопки)</h3>
-        
-        <p id="score3" style="font-weight: bold; color: #27ae60;">Загальний рахунок 0% (0 правильних з 0)</p>
-        <button id="nextBtn3" style="padding: 5px 10px; cursor: pointer;">наступне завдання</button>
-        <br><br>
-        
-        <span id="taskText3" style="font-size: 18px; font-weight: bold;"></span>
-        <div id="radioContainer" style="margin: 10px 0;"></div>
-        
-        <p id="resultMsg3" style="font-weight: bold; min-height: 20px; margin-bottom: 0;"></p>
-    </div>
+        <!-- ЗАВДАННЯ 5 -->
+        <div style="width: 100%; margin-bottom: 20px; padding: 15px; border: 1px solid #ccc; max-width: 250px; font-family: Arial, sans-serif; background: #fff;">
+            <h3 style="margin-top: 0;">Завдання 5: Капча</h3>
+            <p style="margin: 0 0 10px 0;">Введіть число</p>
+            
+            <div id="captchaBox" style="display: flex; gap: 5px; border: 2px solid #ccc; padding: 5px; height: 50px; background: #fff; justify-content: center;"></div>
+            <input type="text" id="captchaInput" style="border: 1px solid #ccc; border-top: none; padding: 5px; width: 100%; box-sizing: border-box; font-size: 16px;">
+            
+            <button id="checkCaptchaBtn" style="margin-top: 10px; padding: 5px 10px; cursor: pointer; width: 100%;">Перевірити</button>
+            <div id="captchaResult" style="margin-top: 5px; font-size: 14px; min-height: 20px; font-weight: bold; text-align: center;"></div>
+        </div>
 
-    <!-- ЗАВДАННЯ 4 -->
-    <div style="margin-bottom: 20px; padding: 15px; border: 1px solid #ccc; max-width: 650px; font-family: Arial, sans-serif; background: #fff;">
-        <h3 style="margin-top: 0;">Завдання 4: Ротатор зображень (Телефони)</h3>
-        <div id="rotator"></div>
-    </div>
-
-    <!-- ЗАВДАННЯ 5 -->
-    <div style="margin-bottom: 20px; padding: 15px; border: 1px solid #ccc; max-width: 200px; font-family: Arial, sans-serif; background: #fff;">
-        <h3 style="margin-top: 0;">Завдання 5: Капча</h3>
-        <p style="margin: 0 0 10px 0;">Введіть число</p>
-        
-        <div id="captchaBox" style="display: flex; gap: 5px; border: 2px solid #ccc; padding: 5px; height: 50px; background: #fff;"></div>
-        <input type="text" id="captchaInput" style="border: 1px solid #ccc; border-top: none; padding: 5px; width: 100%; box-sizing: border-box; font-size: 16px;">
-        
-        <button id="checkCaptchaBtn" style="margin-top: 10px; padding: 5px 10px; cursor: pointer;">Перевірити</button>
-        <div id="captchaResult" style="margin-top: 5px; font-size: 14px; min-height: 20px; font-weight: bold;"></div>
     </div>
 
 </body>
