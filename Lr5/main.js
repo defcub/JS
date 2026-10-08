@@ -147,12 +147,12 @@ const phonesArray = [
         description: 'Смартфон Apple' 
     },
     { 
-        path: 'https://images.unsplash.com/photo-1598327105666-5b89351cb31b?w=500&q=80', 
+        path: 'https://images.pexels.com/photos/404280/pexels-photo-404280.jpeg?auto=compress&cs=tinysrgb&w=500', 
         title: 'Samsung Galaxy', 
         description: 'Флагман на базі Android' 
     },
     { 
-        path: 'https://images.unsplash.com/photo-1575724451006-258051786d1b?w=500&q=80', 
+        path: 'https://images.pexels.com/photos/1786433/pexels-photo-1786433.jpeg?auto=compress&cs=tinysrgb&w=500', 
         title: 'Google Pixel', 
         description: 'Камерофон з чистим Android' 
     }
