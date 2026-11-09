@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Каталог товарів: Мобільні телефони</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header class="shop-header">
+        <a class="back-link" href="../index.html">← На головну</a>
+        <button id="cart-button" type="button">
+            Кошик (<span id="cart-count">0</span>)
+        </button>
+    </header>
+
+    <section class="catalog-section">
+        <h2 class="main-title">ОБОВ'ЯЗКОВО ДОДАЙТЕ СВОЄ ЗАМОВЛЕННЯ</h2>
+        
+        <div class="catalog-wrapper">
+            
+            <div class="nav-arrow arrow-left">&lt;</div>
+            <div class="nav-arrow arrow-right">&gt;</div>
+
+            <div class="catalog-grid">xx
+                
+                <div class="product-card">
+                    <div class="badge badge-green">НОВИНКА</div>
+                    <div class="category">АВТОНОМНІСТЬ</div>
+                    <div class="divider"></div>
+                    
+                    <div class="image-container">
+                        <img src="imgs/motorolla.png" alt="Moto G54">
+                    </div>
+                    
+                    <a href="https://www.motorola.com/ua/uk/p/phones/moto-g/54-power-edition/pmipmgg36mz" target="_blank" class="product-title">MOTO G54 POWER</a>
+                    
+                    <div class="price-area">
+                        <span class="regular-price">дорого</span>
+                        </div>
+                    
+                    <button class="btn btn-magenta" disabled>НЕЗАБАРОМ У ПРОДАЖІ</button>
+                </div>
+
+                <div class="product-card">
+                    <div class="category">ФЛАГМАН</div>
+                    <div class="divider"></div>
+                    
+                    <div class="image-container">
+                        <img src="imgs/iphone15pro.png" alt="iPhone 15 Pro">
+                    </div>
+                    
+                    <a href="https://www.apple.com/iphone-15-pro/" target="_blank" class="product-title">IPHONE 15 PRO</a>
+                    
+                    <div class="price-area">
+                        <span class="old-price">49 999 ГРН</span>
+                        <span class="new-price">46 499 ГРН</span>
+                    </div>
+                    
+                    <button type="button" class="btn btn-yellow"
+                            data-id="iphone-15-pro" data-price="46499">
+                        У КОРЗИНУ
+                    </button>
+                </div>
+
+                <div class="product-card">
+                    <div class="badge badge-blue">ХІТ<br>ПРОДАЖІВ</div>
+                    <div class="category">КАМЕРОФОН</div>
+                    <div class="divider"></div>
+                    
+                    <div class="image-container">
+                        <img src="imgs/xiaomi14ultra.png" alt="Xiaomi 14 Ultra">
+                    </div>
+                    
+                    <a href="https://www.mi.com/global/product/xiaomi-14-ultra/" target="_blank" class="product-title">XIAOMI 14 ULTRA</a>
+                    
+                    <div class="price-area">
+                        <span class="regular-price">54 999 ГРН</span>
+                    </div>
+                    
+                    <button type="button" class="btn btn-yellow"
+                            data-id="xiaomi-14-ultra" data-price="54999">
+                        У КОРЗИНУ
+                    </button>
+                </div>
+
+                <div class="product-card">
+                    <div class="badge badge-blue">ХІТ<br>ПРОДАЖІВ</div>
+                    <div class="category">БЮДЖЕТНИЙ</div>
+                    <div class="divider"></div>
+                    
+                    <div class="image-container">
+                        <img src="imgs/samsunggalaxya15.png" alt="Samsung Galaxy A15">
+                    </div>
+                    
+                    <a href="https://www.samsung.com/levant/smartphones/galaxy-a/galaxy-a15-5g-blue-black-128gb-sm-a156ezkgmea/" target="_blank" class="product-title">GALAXY A15</a>
+                    
+                    <div class="price-area">
+                        <span class="regular-price">6 999 ГРН</span>
+                    </div>
+                    
+                    <button class="btn btn-yellow">У КОРЗИНУ</button>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <dialog id="empty-dialog" aria-labelledby="empty-title">
+        <h2 id="empty-title">Корзина пуста</h2>
+        <form method="dialog">
+            <button>Повернутись до покупок</button>
+        </form>
+    </dialog>
+
+    <dialog id="quantity-dialog" aria-labelledby="product-name">
+        <h2 id="product-name"></h2>
+
+        <form id="quantity-form">
+            <label for="quantity">Вкажіть кількість:</label>
+            <input id="quantity" type="number" min="1" step="1" value="1" required>
+
+            <button type="submit">Додати до корзини</button>
+            <button id="cancel-button" type="button">Скасувати</button>
+        </form>
+    </dialog>
+
+    <dialog id="added-dialog" aria-labelledby="added-title">
+        <h2 id="added-title">Товар додано</h2>
+
+        <a href="cart.html">Перейти у корзину</a>
+
+        <form method="dialog">
+            <button>Повернутись до покупок</button>
+        </form>
+    </dialog>
+
+</body>
+</html>
