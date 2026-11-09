@@ -312,3 +312,20 @@ dialog form {
     margin-top: 16px;
     color: #075985;
 }
+
+.catalog-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 230px), 1fr));
+    row-gap: 30px;
+}
+
+.product-description {
+    margin: 8px 0;
+    color: #444;
+    font-size: 14px;
+}
+
+#catalog-status {
+    color: white;
+    text-align: center;
+}

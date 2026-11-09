@@ -42,22 +42,22 @@
             "badge": "Хіт продажів"
         },
         {
-            "id": "iphone-15-pro-512",
-            "name": "iPhone 15 Pro 512 ГБ",
-            "category": "Флагман",
-            "price": 52999,
-            "description": "Варіант із 512 ГБ пам’яті.",
-            "image": "imgs/iphone15pro.png",
-            "url": "https://www.apple.com/iphone-15-pro/"
+            "id": "google-pixel-9a",
+            "name": "Google Pixel 9a",
+            "category": "Камерофон",
+            "price": 21999,
+            "description": "Смартфон Google серії Pixel у кольорі Iris.",
+            "image": "imgs/Google-Pixel-9a.png",
+            "url": "https://store.google.com/product/pixel_9a?hl=en-US"
         },
         {
-            "id": "xiaomi-14-ultra-1tb",
-            "name": "Xiaomi 14 Ultra 1 ТБ",
-            "category": "Камерофон",
-            "price": 59999,
-            "description": "Варіант із 1 ТБ пам’яті.",
-            "image": "imgs/xiaomi14ultra.png",
-            "url": "https://www.mi.com/global/product/xiaomi-14-ultra/"
+            "id": "nothing-phone-2a",
+            "name": "Nothing Phone (2a)",
+            "category": "Дизайн",
+            "price": 14999,
+            "description": "Смартфон із прозорою задньою панеллю та двома камерами по центру.",
+            "image": "imgs/nothing-phone-2a.png",
+            "url": "https://intl.nothing.tech/products/phone-2a"
         }
     ]
 }
