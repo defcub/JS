@@ -1,0 +1,63 @@
+{
+    "title": "Каталог смартфонів",
+    "products": [
+        {
+            "id": "moto-g54-power",
+            "name": "Moto G54 Power",
+            "category": "Автономність",
+            "price": null,
+            "description": "Модель очікується у продажу.",
+            "image": "imgs/motorolla.png",
+            "url": "https://www.motorola.com/ua/uk/p/phones/moto-g/54-power-edition/pmipmgg36mz",
+            "badge": "Новинка"
+        },
+        {
+            "id": "iphone-15-pro",
+            "name": "iPhone 15 Pro",
+            "category": "Флагман",
+            "price": 46499,
+            "oldPrice": 49999,
+            "description": "Базова пропозиція серії iPhone 15 Pro.",
+            "image": "imgs/iphone15pro.png",
+            "url": "https://www.apple.com/iphone-15-pro/"
+        },
+        {
+            "id": "xiaomi-14-ultra",
+            "name": "Xiaomi 14 Ultra",
+            "category": "Камерофон",
+            "price": 54999,
+            "description": "Смартфон для мобільної фотографії.",
+            "image": "imgs/xiaomi14ultra.png",
+            "url": "https://www.mi.com/global/product/xiaomi-14-ultra/",
+            "badge": "Хіт продажів"
+        },
+        {
+            "id": "galaxy-a15",
+            "name": "Samsung Galaxy A15",
+            "category": "Бюджетний",
+            "price": 6999,
+            "description": "Доступна модель серії Galaxy A.",
+            "image": "imgs/samsunggalaxya15.png",
+            "url": "https://www.samsung.com/levant/smartphones/galaxy-a/galaxy-a15-5g-blue-black-128gb-sm-a156ezkgmea/",
+            "badge": "Хіт продажів"
+        },
+        {
+            "id": "google-pixel-9a",
+            "name": "Google Pixel 9a",
+            "category": "Камерофон",
+            "price": 21999,
+            "description": "Смартфон Google серії Pixel у кольорі Iris.",
+            "image": "imgs/Google-Pixel-9a.png",
+            "url": "https://store.google.com/product/pixel_9a?hl=en-US"
+        },
+        {
+            "id": "nothing-phone-2a",
+            "name": "Nothing Phone (2a)",
+            "category": "Дизайн",
+            "price": 14999,
+            "description": "Смартфон із прозорою задньою панеллю та двома камерами по центру.",
+            "image": "imgs/nothing-phone-2a.png",
+            "url": "https://intl.nothing.tech/products/phone-2a"
+        }
+    ]
+}

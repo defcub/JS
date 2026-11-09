@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Каталог товарів: Мобільні телефони</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="language.js" defer></script>
+    <script src="script.js" defer></script>
+</head>
+<body class="language-pending">
+    <dialog id="language-dialog" aria-labelledby="language-title">
+        <h2 id="language-title">Оберіть мову / Choose a language</h2>
+
+        <button type="button" data-language="uk" lang="uk">Українська</button>
+        <button type="button" data-language="en" lang="en">English</button>
+    </dialog>
+    
+    <header class="shop-header">
+        <a class="back-link" href="../index.html" data-en="← Home">← На головну</a>
+        <label>
+            <span data-en="Language">Мова</span>
+            <select id="shop-language">
+                <option value="uk" lang="uk">Українська</option>
+                <option value="en" lang="en">English</option>
+            </select>
+        </label>
+        <button id="cart-button" type="button">
+            <span data-en="Cart">Кошик</span> (<span id="cart-count">0</span>)
+        </button>
+    </header>
+
+    <section class="catalog-section">
+        <h1 class="main-title" id="catalog-title"></h1>
+
+        <div class="catalog-wrapper">
+            <p id="catalog-status" role="status"></p>
+            <div id="product-container" class="catalog-grid"></div>
+        </div>
+    </section>
+
+    <dialog id="empty-dialog" aria-labelledby="empty-title">
+        <h2 id="empty-title" data-en="Your cart is empty">Корзина пуста</h2>
+        <form method="dialog">
+            <button>Повернутись до покупок</button>
+        </form>
+    </dialog>
+
+    <dialog id="quantity-dialog" aria-labelledby="product-name">
+        <h2 id="product-name"></h2>
+
+        <form id="quantity-form">
+            <label for="quantity" data-en="Choose quantity:">Вкажіть кількість:</label>
+            <input id="quantity" type="number" min="1" step="1" value="1" required>
+
+            <button type="submit" data-en="Add to cart">Додати до корзини</button>
+            <button id="cancel-button" type="button" data-en="Cancel">Скасувати</button>
+        </form>
+    </dialog>
+
+    <dialog id="added-dialog" aria-labelledby="added-title">
+        <h2 id="added-title" data-en="Product added">Товар додано</h2>
+
+        <a href="cart.html" data-en="Go to cart">Перейти у корзину</a>
+
+        <form method="dialog">
+            <button data-en="Continue shopping">Повернутись до покупок</button>
+        </form>
+    </dialog>
+
+</body>
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Кошик товарів</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="language.js" defer></script>
+    <script src="cart.js" defer></script>
+</head>
+<body class="language-pending">
+    <dialog id="language-dialog" aria-labelledby="language-title">
+        <h2 id="language-title">Оберіть мову / Choose a language</h2>
+
+        <button type="button" data-language="uk" lang="uk">Українська</button>
+        <button type="button" data-language="en" lang="en">English</button>
+    </dialog>
+
+    <main class="cart-page">
+        <label>
+            <span data-en="Language">Мова</span>
+            <select id="shop-language">
+                <option value="uk" lang="uk">Українська</option>
+                <option value="en" lang="en">English</option>
+            </select>
+        </label>
+
+        <h1>Ви обрали</h1>
+
+        <p id="empty-message" hidden>Корзина пуста.</p>
+
+        <div id="cart-content" hidden>
+            <div class="cart-table-wrapper">
+                <table class="cart-table">
+                    <thead>
+                        <tr>
+                            <th scope="col">№</th>
+                            <th scope="col">Назва товару</th>
+                            <th scope="col">Ціна за од.</th>
+                            <th scope="col">Кількість</th>
+                            <th scope="col">Сума</th>
+                            <th scope="col">Дія</th>
+                        </tr>
+                    </thead>
+
+                    <tbody id="cart-rows"></tbody>
+
+                    <tfoot>
+                        <tr>
+                            <th scope="row" colspan="4">Разом до оплати</th>
+                            <td id="cart-total" colspan="2"></td>
+                        </tr>
+                    </tfoot>
+                </table>
+            </div>
+
+            <a id="pay-link" href="#checkout">Оплатити</a>
+        </div>
+
+        <a href="index.html" data-en="Continue shopping">Повернутись до покупок</a>
+
+        <dialog id="checkout" aria-labelledby="checkout-title">
+            <h2 id="checkout-title">Оплата замовлення</h2>
+            <p id="checkout-amount"></p>
+            <p>Навчальний кошик. Платіж не здійснюється.</p>
+
+            <form method="dialog">
+                <button>Закрити</button>
+            </form>
+        </dialog>
+    </main>
+</body>
+</html>
