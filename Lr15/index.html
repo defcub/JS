@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Каталог книг — ЛР15</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <script type="module" src="js/app.js"></script>
+</head>
+<body>
+    <main class="container">
+        <a class="back-link" href="../index.html">← На головну</a>
+        <h1>Каталог книг</h1>
+        <a href="portfolio.html">Індивідуальне завдання - Портфоліо проєктів</a>
+
+        <fieldset id="controls" disabled>
+            <legend>Керування каталогом</legend>
+
+            <section>
+                <h2>Обліковий запис</h2>
+                <p id="user-info"></p>
+
+                <form id="auth-form" hidden>
+                    <label for="email">Електронна пошта</label>
+                    <input id="email" type="email" autocomplete="email" required>
+
+                    <label for="password">Пароль</label>
+                    <input id="password" type="password" minlength="6" required>
+
+                    <button type="submit" value="login">Увійти</button>
+                    <button type="submit" value="register">Зареєструватися</button>
+                </form>
+
+                <button id="logout" type="button" hidden>Вийти</button>
+                <p id="auth-status" role="status"></p>
+            </section>
+
+            <section>
+                <h2>Список книг</h2>
+                <p id="list-status" role="status"></p>
+                <ul id="books-list"></ul>
+            </section>
+
+            <section id="admin-panel" hidden>
+                <h2 id="form-heading">Додати книгу</h2>
+
+                <form id="book-form">
+                    <label for="title">Назва книги</label>
+                    <input id="title" required maxlength="150">
+
+                    <label for="author">Автор</label>
+                    <input id="author" required maxlength="150">
+
+                    <button id="save" type="submit">Додати книгу</button>
+                    <button id="cancel" type="button" hidden>Скасувати редагування</button>
+                </form>
+
+                <p id="book-status" role="status"></p>
+            </section>
+        </fieldset>
+    </main>
+</body>
+</html>

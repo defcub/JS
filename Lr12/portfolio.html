@@ -11,7 +11,7 @@
     <main class="container">
         <a class="back-link" href="index.html">До каталогу книг</a>
         <h1>Портфоліо проєктів</h1>
-
+        <p id="portfolio-role" role="status"></p>   
         <section aria-labelledby="catalog-heading">
             <h2 id="catalog-heading">Каталог</h2>
 
@@ -38,9 +38,11 @@
             <ul id="project-list"></ul>
         </section>
 
-        <section aria-labelledby="form-heading">
+        <section id="project-admin" aria-labelledby="form-heading" hidden></section>
             <h2 id="form-heading">Додати проєкт</h2>
-
+            <button id="cancel-project" type="button" hidden>
+                Скасувати редагування
+            </button>
             <form id="project-form">
                 <label for="project-title">Назва</label>
                 <input id="project-title" required maxlength="150">
